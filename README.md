@@ -4,41 +4,41 @@
 
 ---
 
-## ✨ Master Features
+## Master Features ✨
 
-### 1. 🌙 Universal Night Mode
+### 1. Universal Night Mode 🌙
 The most reliable eye protection in your toolkit. Instantly invert any page to protect your eyes, with a persistent glassmorphism toggle in the popup that remembers your preference across all sites.
 
-### 2. 🎨 Precision Color Picker
+### 2. Precision Color Picker 🎨
 A professional-grade design tool. Click anywhere on any webpage to grab HEX codes directly to your clipboard. Each picked color is automatically saved to your history for quick access.
 
-### 3. 🍅 Pomodoro Pro Station
+### 3. Pomodoro Pro Station 🍅
 A dedicated focus workstation with background persistence.
 - **Custom Cycles**: Effortlessly adjust your Work/Break durations using the `+` and `-` controls.
 - **Session Logging**: Every completed cycle is logged with a colored badge and timestamp in your History tab.
 - **Notifications**: ProFlow sends you a browser notice the moment your focus session ends.
 
-### 4. 🌊 Universal Glide (Auto-Scroll)
+### 4. Universal Glide (Auto-Scroll) 🌊
 A hardware-accelerated reading assistant that matches your monitor's high refresh rate.
 - **Stay-On Technology**: Once enabled, it stays active even after a page refresh or when moving between tabs.
 - **unblockable Scrolling**: Automatically finds the main scrolling container on complex apps like LinkedIn, Gmail, and Twitter.
 - **3-Speed Control**: Choose Slow, Med, or Fast to glide through long articles and social feeds hands-free.
 
-### 📋 History Tab
+### History Tab 📋
 A unified view of your most valuable data.
 - **Recent Copies**: Tracks everything from HEX codes to text snippets.
 - **Pomodoro Achievements**: Review your daily productivity streaks with exact completion times.
 
 ---
 
-## 🛠️ Technical Prowess
+## Technical Prowess 🛠️
 - **Hardware-Accelerated**: Uses `requestAnimationFrame` for the smoothest possible scrolling.
 - **100% Private**: All data (History, Timers, Settings) is stored **locally** on your machine. Nothing ever leaves your browser.
 - **Vite 6 Power**: Built with the latest Vite 6 and Manifest V3 standards for maximum speed and security.
 
 ---
 
-## 🚀 Getting Started
+## Getting Started 🚀
 
 ### Installation
 1.  Open `chrome://extensions/` in your browser.
@@ -59,7 +59,7 @@ npm run build
 
 ---
 
-## 🎯 ProFlow Vision
+## ProFlow Vision 🎯
 ProFlow is designed for power-users who value speed, privacy, and a beautiful interface. Every feature is tuned for native-like performance and frictionless interaction.
 
 **Happy Pro-Flowing!** 🌊🎯
