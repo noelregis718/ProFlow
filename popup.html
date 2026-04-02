@@ -47,17 +47,47 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right arrow"><path d="m9 18 6-6-6-6"/></svg>
         </div>
 
-        <div class="card status">
+        <!-- Pomodoro Timer -->
+        <div class="card pomodoro-card">
           <div class="card-info">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-save"><path d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><circle cx="12" cy="13" r="3"/><path d="M7 3v5h8"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-timer"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></svg>
             <div>
-              <h3>Auto-Save</h3>
-              <p id="save-status-text">Monitoring all forms...</p>
+              <h3>Pomodoro</h3>
+              <p id="pomodoro-status">Work Session</p>
             </div>
           </div>
-          <button id="restore-btn" class="badge clickable" style="display:none; border:none; cursor:pointer;">Restore</button>
-          <span class="badge" id="save-count">Idle</span>
+          <div class="timer-display">
+            <div class="time-adjuster">
+              <button id="timer-minus" class="btn-mini">-</button>
+              <span id="timer-display">25:00</span>
+              <button id="timer-plus" class="btn-mini">+</button>
+            </div>
+            <div class="timer-controls">
+              <button id="pomodoro-start" class="btn-icon">▶</button>
+              <button id="pomodoro-reset" class="btn-icon">↺</button>
+            </div>
+          </div>
         </div>
+
+        <!-- Auto Scroll -->
+        <div class="card">
+          <div class="card-info">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scroll"><path d="M19 17V5a2 2 0 0 0-2-2H4"/><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"/><path d="M15 5v5"/><path d="M8 5v2"/></svg>
+            <div>
+              <h3>Auto-Scroll</h3>
+              <div class="speed-selector">
+                <button class="speed-btn active" data-speed="1">Slow</button>
+                <button class="speed-btn" data-speed="3">Med</button>
+                <button class="speed-btn" data-speed="6">Fast</button>
+              </div>
+            </div>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="scroll-toggle">
+            <span class="slider round"></span>
+          </label>
+        </div>
+
       </section>
 
       <!-- Clipboard History Tab -->
@@ -67,8 +97,16 @@
           <button id="clear-history" class="text-btn">Clear All</button>
         </div>
         <ul id="history-list" class="styled-list">
-          <!-- Items will be injected here -->
+          <!-- Clipboard items will be injected here -->
           <li class="empty-state">No copies yet...</li>
+        </ul>
+
+        <div class="header-row" style="margin-top: 20px;">
+          <h3>Pomodoro Sessions</h3>
+        </div>
+        <ul id="pomodoro-history-list" class="styled-list">
+          <!-- Sessions will be injected here -->
+          <li class="empty-state">No sessions yet...</li>
         </ul>
       </section>
 

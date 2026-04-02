@@ -127,6 +127,10 @@ header p {
   pointer-events: none;
 }
 
+.speed-selector *, .time-adjuster * {
+  pointer-events: auto !important;
+}
+
 .arrow {
   width: 16px;
   opacity: 0.5;
@@ -140,6 +144,116 @@ header p {
   padding: 0.25rem 0.6rem;
   border-radius: 20px;
   font-weight: 600;
+}
+
+/* Pomodoro Styling */
+.timer-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+#timer-display {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+}
+
+.timer-controls {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.time-adjuster {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-mini {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-border);
+  color: var(--text-secondary);
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.btn-mini:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.session-badge {
+  font-size: 0.65rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.session-badge.work {
+  background: rgba(59, 130, 246, 0.2);
+  color: #60a5fa;
+}
+
+.session-badge.break {
+  background: rgba(34, 197, 94, 0.2);
+  color: #4ade80;
+}
+
+.time-label {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  opacity: 0.8;
+}
+
+.btn-icon {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.2s;
+}
+
+.btn-icon:hover {
+  background: var(--primary-color);
+}
+
+/* Speed Selector Styling */
+.speed-selector {
+  display: flex;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.speed-btn {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--text-secondary);
+  font-size: 9px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.speed-btn.active {
+  background: var(--primary-color);
+  color: white;
+  border-color: transparent;
 }
 
 /* Toggle Switch */
@@ -241,6 +355,35 @@ input:checked + .slider:before {
 
 .list-item:hover {
   background: rgba(255, 255, 255, 0.08);
+}
+
+.badge-mini {
+  background: rgba(99, 102, 241, 0.2);
+  color: #a5b4fc;
+  font-size: 0.65rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.row-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1;
+}
+
+.truncate-low {
+  font-size: 0.8rem;
+  color: var(--text-primary);
+  opacity: 0.9;
+}
+
+.form-entry {
+  align-items: flex-start;
 }
 
 footer {
