@@ -62,4 +62,7 @@ npm run build
 ## ProFlow Vision 🎯
 ProFlow is designed for power-users who value speed, privacy, and a beautiful interface. Every feature is tuned for native-like performance and frictionless interaction.
 
+## License 📜
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 **Happy Pro-Flowing!** 🌊🎯
